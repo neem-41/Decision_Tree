@@ -1,0 +1,46 @@
+x > 0.240
+| x > 0.374
+| | x > 0.521
+| | | y > 0.534 -> Class: red
+| | | y < 0.534 -> Class: red
+| | x < 0.521 -> Class: blue
+| x < 0.374 -> Class: red
+x < 0.240 -> Class: blue
+
+x > 0.240
+| x > 0.374 -> Class: red
+| x < 0.374 -> Class: red
+x < 0.240 -> Class: blue
+
+y > 0.605 -> Class: blue
+y < 0.605
+| y > 0.249
+| | x > 0.689 -> Class: red
+| | x < 0.689
+| | | x > 0.221
+| | | | x > 0.558
+| | | | | y > 0.477 -> Class: red
+| | | | | y < 0.477 -> Class: red
+| | | | x < 0.558
+| | | | | x > 0.264 -> Class: blue
+| | | | | x < 0.264
+| | | | | | x > 0.243 -> Class: blue
+| | | | | | x < 0.243 -> Class: blue
+| | | x < 0.221 -> Class: blue
+| y < 0.249
+| | y > 0.210
+| | | y > 0.215 -> Class: red
+| | | y < 0.215 -> Class: red
+| | y < 0.210 -> Class: red
+
+y > 0.605 -> Class: blue
+y < 0.605
+| y > 0.249
+| | x > 0.689 -> Class: red
+| | x < 0.689
+| | | x > 0.221 -> Class: blue
+| | | x < 0.221 -> Class: blue
+| y < 0.249 -> Class: red
+
+
+
